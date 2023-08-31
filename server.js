@@ -13,6 +13,16 @@ app.use(express.urlencoded({ extended: true }));
 // this will help us access files from other files, like css and js from html
 app.use(express.static(path.join(__dirname, 'public')));
 
+// set up Handlebars.js as your app's template engine
+const exphbs = require('express-handlebars');
+const hbs = exphbs.create({});
+
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
+
+
+
+
 // turn on routes, and make sure that this is always after the creation of your session. if you declare this befor the declaration of your session, it wont work 
 app.use(routes);
 
