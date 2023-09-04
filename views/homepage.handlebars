@@ -23,7 +23,7 @@
     </ul>
   </div>
   
-  <button class=" fa-beat-fade contact_me_text" id="nav-link">Contact Moi<i class="fa-solid fa-right-to-bracket m-1"></i></button>
+  <button class="fa-beat-fade contact_me_text" id="nav-link">Contact Moi<i class="fa-solid fa-right-to-bracket m-1"></i></button>
 
 </nav>
 
@@ -35,7 +35,7 @@
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ad sit molestias perspiciatis voluptatum. Earum, reiciendis? Quasi laborum facere explicabo magnam rem itaque incidunt accusantium velit animi dignissimos, officia iusto!
     </div>
     <a href="#info"><div class="btn">
-      <button type="button" class="btn-primary">Plus D'info</button>
+      <button type="button" class="btn-primary fa-beat-fade">Plus D'info</button>
     </a>
     </div>
   </div>
@@ -46,70 +46,76 @@
 <div class="pets_content" id="info">
   <div class="pet_context">
     <img src="/images/work.png" alt="">
-    <h1>Ce que nous faisons</h1>
-    <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, atque. </div>
+    {{!-- here  --}}
+    <div>
+      <h1>Ce que nous faisons</h1>
+      <div class="pet_context_text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, atque. </div>
+    </div>
   </div>
   <div class="pet_context">
     <img src="/images/famillyjpg.jpg" alt="">
     <h1>Nos Chiots</h1>
-    <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, atque. </div>
+    <div class="pet_context_text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, atque. </div>
+    <a href="#dogs">
+      <button class="btn btn-light">Voir</button>
+    </a>
   </div>
   <div class="pet_context">
     <img src="/images/pomsky3jpg.jpg" alt="">
     <h1>Chiots Deja Vendu</h1>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, atque. </div>
+    <div class="pet_context_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, atque. </div>
   </div>
   <div class="pet_context">
     <img src="/images/whowe.png" alt="">
     <h1>Qui Nous Sommes?</h1>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id accusamus dolores dignissimos autem quasi libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, atque. </div>
+    <div class="pet_context_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id accusamus dolores dignissimos autem quasi libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, atque. </div>
   </div>
 </div>
 
 
- <div class="menu" id="menu">
+ <div class="menu" id="dogs">
       <div class="box-container">
 
         <div class="box">
           <img src="/images/puppy-2785074_640.jpg" alt="">
           <h3 class="heading-1">Organic Kona coffee from Hawai'i</h3>
           <div class="price"><div class="price-1 prices">62.99</div><div class="dollar-sign">$</div><span>110$</span></div>
-          <button class="btn-danger">See Availability</button>  
+          <button class="btn btn-light">See Availability</button>  
         </div>
 
         <div class="box">
           <img src="/images/puppy-2785074_640.jpg" alt="">
           <h3 class="heading-2">Granell Wild coffee from Indonesia</h3>
           <div class="price"><div class="price-2 prices">108.99</div><div class="dollar-sign">$</div><span>120.99$</span></div>
-          <button class="btn-danger">See availability</button>
+          <button class="btn btn-light">See availability</button>
         </div>
 
         <div class="box">
           <img src="/images/puppy-2785074_640.jpg" alt="">
           <h3 class="heading-3" >Leeroy Jenkins coffee from Guatemala</h3>
           <div class="price"><div class="prices price-3">65.99</div><div class="dollar-sign">$</div><span>40.99$</span></div>
-          <button class="btn-danger">See availability</button>
+          <button class="btn btn-light">See availability</button>
         </div>
 
         <div class="box">
           <img src="/images/puppy-2785074_640.jpg" alt="">
           <h3 class="heading-4" >Jamaica Blue coffee from Jamaica</h3>
           <div class="price"><div class="price-4 prices">98.99</div><div class="dollar-sign">$</div><span>50.99$</span></div>
-          <button class="btn-danger">See availability</button>
+          <button class="btn btn-light">See availability</button>
         </div>
 
         <div class="box">
           <img src="/images/puppy-2785074_640.jpg" alt="">
           <h3 class="heading-5" >Nakayama Arabica coffee from Okinawa</h3>
           <div class="price"><div class="price-5 prices">175.99</div><div class="dollar-sign">$</div><span>90.99$</span></div>
-          <button class="btn-danger">See availability</button>
+          <button class="btn btn-light">See availability</button>
         </div>
 
         <div class="box">
           <img src="/images/puppy-2785074_640.jpg" alt="">
           <h3 class="heading-6" >Peaberry Arabica coffee from Brazil</h3>
           <div class="price"><div class="price-6 prices">155.99</div><div class="dollar-sign">$</div><span>115.99$</span></div>
-          <button class="btn-danger">See availability</button>
+          <button class="btn btn-light">See availability</button>
         </div>
 
       </div>
