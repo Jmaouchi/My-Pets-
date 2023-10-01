@@ -3,6 +3,16 @@
   --border: 0.1rem solid rgba(255, 255, 255, 0.3);
 }
 
+.main-text{
+  background-color: #8d8e90;
+  padding:20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+}
+
 nav{
   background-color: #0e4575;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -26,6 +36,10 @@ nav{
 
 .navbar-nav li:hover{
   background-color: rgb(100, 132, 212);
+}
+
+.contact_me_text{
+  margin-right: 25px;
 }
 
 
@@ -90,7 +104,12 @@ section{
 .pet_context{
   margin: 10px;
   border: var(--border);
-  padding: 10px;
+  padding: 20px;
+  border-radius: 25px 0px;
+}
+
+.info_btn{
+  margin-top: 15px;
 }
 
 .pet_context h1{
@@ -167,6 +186,45 @@ img{
 
 .menu .box-container .box:hover > * {
   color: #010103;
+}
+
+
+.race{
+  background-color: #28292b;
+  color: #dcd7d0;
+}
+
+.races{
+  padding: 10px;
+  background-color: #28292b;
+  color: aliceblue;
+}
+
+.races_heading{
+  background-color: #0e4575;
+  padding: 10px;
+}
+
+
+.races{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.races_img{
+  padding: 25px;
+}
+
+.all-what-exists{
+  
+}
+
+.alldogs{
+  background-color: #000000;
+  border: 1px solid rgb(240, 235, 235);
+  border-radius: 15px;
 }
 
 
