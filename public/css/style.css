@@ -96,8 +96,11 @@ section{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: rgb(140, 140, 138);
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   padding: 15px;
 }
 
