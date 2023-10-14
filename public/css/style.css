@@ -1,19 +1,29 @@
 :root {
   --main-color: #d3ad7f;
   --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  position: relative;
 }
 
 .main-text{
-  background-color: #8d8e90;
   padding:20px;
+  background-color: #66af37;
   display: flex;
-  align-items: center;
+  font-family: Sarabun,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: max-content;
   justify-content: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-style: italic;
+  letter-spacing: 0;
+  line-height: 24px;
+  min-height: 40px;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  z-index: 1;
 }
 
 nav{
+  position: absolute;
   background-color: #0e4575;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -231,6 +241,12 @@ img{
 }
 
 
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 @media (max-width: 598px) {
   /*menu*/
