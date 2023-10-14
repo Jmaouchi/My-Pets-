@@ -1,5 +1,5 @@
 :root {
-  --main-color: #d3ad7f;
+  --main-color: #0e4575;
   --border: 0.1rem solid rgba(255, 255, 255, 0.3);
   position: relative;
 }
@@ -231,7 +231,7 @@ img{
 }
 
 .all-what-exists{
-  
+  padding: 15px;
 }
 
 .alldogs{
@@ -242,10 +242,27 @@ img{
 
 
 
-footer{
+.footer{
+  background-color: var(--main-color);
+  width: 100%;
+  padding: 15px;
+  color: whitesmoke;
+  font-size: 13px;
+}
+
+.footer-upper-content{
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 100px;
+}
+
+.footer-lower-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  margin: 20px;
 }
 
 @media (max-width: 598px) {
