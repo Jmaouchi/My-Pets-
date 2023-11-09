@@ -325,6 +325,31 @@ img{
   margin: 20px;
 }
 
+
+/* about-us */
+.two-column-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: whitesmoke;
+}
+
+.column {
+  flex-basis: 200;
+  flex: 1; 
+  padding: 20px;
+}
+
+.column img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+/* media queries start */
 @media (max-width: 598px) {
   /*menu*/
   .menu .box-container {
@@ -335,4 +360,14 @@ img{
   .main-text{
     font-size: 5px;
   }
+
+
+  /* about */
+  
+.column img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  margin: 0 auto;
+}
 }
