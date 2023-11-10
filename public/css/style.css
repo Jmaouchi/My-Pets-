@@ -1,62 +1,58 @@
-  .svg{
-    background-color: red;
-  }
-  
-  .container {
-    --uib-size: 45px;
-    --uib-color: black;
-    --uib-speed: 1.75s;
-    --uib-bg-opacity: .1;
-    height: 31.25px;
-    width: 50px;
-    transform-origin: center;
-    overflow: visible;
+.container {
+  --uib-size: 45px;
+  --uib-color: black;
+  --uib-speed: 1.75s;
+  --uib-bg-opacity: .1;
+  height: 31.25px;
+  width: 50px;
+  transform-origin: center;
+  overflow: visible;
+}
+
+.car {
+  stroke: var(--uib-color);
+  stroke-dasharray: 100;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation:
+    travel var(--uib-speed) ease-in-out infinite,
+    fade var(--uib-speed) ease-out infinite;
+  will-change: stroke-dasharray, stroke-dashoffset;
+  transition: stroke 0.5s ease;
+}
+
+.track {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: var(--uib-color);
+  opacity: var(--uib-bg-opacity);
+}
+
+@keyframes travel {
+  0% {
+    stroke-dashoffset: 100;
   }
 
-  .car {
-    stroke: var(--uib-color);
-    stroke-dasharray: 100;
+  75% {
     stroke-dashoffset: 0;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    animation:
-      travel var(--uib-speed) ease-in-out infinite,
-      fade var(--uib-speed) ease-out infinite;
-    will-change: stroke-dasharray, stroke-dashoffset;
-    transition: stroke 0.5s ease;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
   }
 
-  .track {
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke: var(--uib-color);
-    opacity: var(--uib-bg-opacity);
+  20%,
+  55% {
+    opacity: 1;
   }
 
-  @keyframes travel {
-    0% {
-      stroke-dashoffset: 100;
-    }
-
-    75% {
-      stroke-dashoffset: 0;
-    }
+  100% {
+    opacity: 0;
   }
-
-  @keyframes fade {
-    0% {
-      opacity: 0;
-    }
-
-    20%,
-    55% {
-      opacity: 1;
-    }
-
-    100% {
-      opacity: 0;
-    }
-  }
+}
 
 
 :root {
@@ -113,8 +109,7 @@ nav{
   margin-right: 25px;
 }
 
-
-section{
+.about{
   background-color:  #242628;
   display: flex;
   align-items: center;
@@ -252,6 +247,47 @@ img{
   margin-left: 15px;
 }
 
+/* sold dogs */
+.header {
+  text-align: center;
+  background-color: #333f4b;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sold-out-dogs {
+  font-size: 2em;
+}
+
+.sold-heading {
+  color: #dc3545;
+  font-size: 2em;
+  margin-bottom: 15px;
+  transform: rotate(-45deg);
+  display: inline-block;
+  padding: 8px;
+  border: 2px solid #dc3545;
+  border-radius: 4px;
+}
+
+.sold-message {
+  color: #989191;
+  font-size: 1.2em;
+  line-height: 1.5;}
+
 .menu .box-container .box:hover {
   background: white;
   color: black;
@@ -328,28 +364,38 @@ img{
 
 /* about-us */
 .two-column-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  background-color: #010103;
   color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
 }
 
 .column {
-  flex-basis: 200;
-  flex: 1; 
+  flex: 1;
   padding: 20px;
+  text-align: center;
 }
 
 .column img {
   max-width: 100%;
   height: auto;
-  display: block;
-  margin: 0 auto;
+  border-radius: 8px; /* Optional: Add rounded corners to the image */
 }
 
 
 
 /* media queries start */
+@media (max-width: 768px) {
+  .column {
+      flex: 100%;
+      margin-bottom: 20px;
+  }
+}
+
+
 @media (max-width: 598px) {
   /*menu*/
   .menu .box-container {
@@ -360,8 +406,5 @@ img{
   .main-text{
     font-size: 5px;
   }
-
-
-  /* about */
 
 }

@@ -1,9 +1,9 @@
-<div class="svg">
+{{!-- <div class="svg">
   <svg class="container"  x="0px"  y="0px" viewBox="0 0 50 31.25" height="31.25" width="50" preserveAspectRatio='xMidYMid meet'>
     <path  class="track" stroke-width="4" fill="none" pathlength="100" d="M0.625 21.5 h10.25 l3.75 -5.875 l7.375 15 l9.75 -30 l7.375 20.875 v0 h10.25" />
     <path class="car"stroke-width="4" fill="none" pathlength="100"d="M0.625 21.5 h10.25 l3.75 -5.875 l7.375 15 l9.75 -30 l7.375 20.875 v0 h10.25"/>
   </svg>
-</div>
+</div> --}}
 <div class="main-text">
   Ramenez l'amour à la maison ! Nous facilitons les voyages de chiots à l'échelle nationale ❤️.
 </div>
@@ -19,7 +19,7 @@
       </li>
       <a href="#races">
         <li class="nav-item">
-          <a class="nav-link border border-success text-light" href="#races" id="nav-link-padding">Parent Reproducteur</a>
+          <a class="nav-link border border-success text-light" href="#parent" id="nav-link-padding">Parent Reproducteur</a>
         </li>
       </a>
       <li class="nav-item">
@@ -35,7 +35,7 @@
 
 </nav>
 
-<section class="about ">
+<section class="about">
   <div class="about-context-one col-sm-12 col-lg-6">
     <div class="about-text">
       En raison de la différence de taille entre les Poméraniens et les huskies, l'élevage naturel entre ces chiens est dangereux,
@@ -62,7 +62,7 @@
     <div>
       <h1>Ce que nous faisons</h1>
       <div class="pet_context_text">Un pomskies de rêve où chaque client est traité comme un seul client</div>
-      <button class="btn btn-light info_btn">Voir</button>
+      <a href="#about_us"><button class="btn btn-light info_btn">Voir</button></a>
     </div>
   </div>
   <div class="pet_context">
@@ -77,7 +77,7 @@
     <img src="/images/pomsky1.jpg" alt="">
     <h1>Voir Les Parent</h1>
     <div class="pet_context_text">Les parents sont %100 génétiquement pomskies, avec un test ADN qui a etai fais pour les deux pomskies</div>
-    <button class="btn btn-light info_btn">Voir</button>
+    <a href="#parent"><button class="btn btn-light info_btn">Voir</button></a>
   </div>
   <div class="pet_context">
     <img src="/images/whoWe.png" alt="">
@@ -90,57 +90,76 @@
 {{> aboutUs}}
 
 <div class="menu" id="dogs">
+  <div class="header">
+    <h1>Chiens Deja Vendue</h1>
+  </div>
   <div class="box-container">
     <div class="box">
       <img src="/images/pomsky10.jpg" alt="">
       <h3 class="heading-1">Kimy</h3>
       <div class="price"><div class="price-1 prices">$2500</div><div class="dollar-sign"></div><span>$3000</span></div>
-      <button class="btn btn-light">Voir disponibilité de ce type</button>          
+      <div class="sold-container">
+        <h1 class="sold-heading">Vende(u)</h1>
+        <p class="sold-message">Nous sommes désolés, mais cet article n'est plus disponible.</p>
+      </div>          
     </div>
 
     <div class="box">
       <img src="/images/pomsky6.jpg" alt="">
       <h3 class="heading-2">Kimy et Pike</h3>
       <div class="price"><div class="price-2 prices">$2500</div><div class="dollar-sign"></div><span>$3000</span></div>
-      <button class="btn btn-light">Voir disponibilité de ce type</button>
+       <div class="sold-container">
+        <h1 class="sold-heading">Vende(u)</h1>
+        <p class="sold-message">Nous sommes désolés, mais cet article n'est plus disponible.</p>
+      </div>  
     </div>
 
     <div class="box">
       <img src="/images/dog.png" alt="">
       <h3 class="heading-3" >Kimy</h3>
       <div class="price"><div class="prices price-3">$2500</div><div class="dollar-sign"></div><span>$3000</span></div>
-      <button class="btn btn-light">Voir disponibilité de ce type</button>
+      <div class="sold-container">
+        <h1 class="sold-heading">Vende(u)</h1>
+        <p class="sold-message">Nous sommes désolés, mais cet article n'est plus disponible.</p>
+      </div>  
     </div>
 
     <div class="box">
       <img src="/images/pomsky6.jpg" alt="">
       <h3 class="heading-4" >Jamaica Blue coffee from Jamaica</h3>
       <div class="price"><div class="price-4 prices">$2500</div><div class="dollar-sign"></div><span>$3000</span></div>
-      <button class="btn btn-light">Voir disponibilité de ce type</button>
+      <div class="sold-container">
+        <h1 class="sold-heading">Vende(u)</h1>
+        <p class="sold-message">Nous sommes désolés, mais cet article n'est plus disponible.</p>
+      </div>  
     </div>
 
     <div class="box">
       <img src="/images/pomsky6.jpg" alt="">
       <h3 class="heading-5" >Nakayama Arabica coffee from Okinawa</h3>
       <div class="price"><div class="price-5 prices">$2500</div><div class="dollar-sign"></div><span>$3000</span></div>
-      <button class="btn btn-light">Voir disponibilité de ce type</button>
+      <div class="sold-container">
+        <h1 class="sold-heading">Vende(u)</h1>
+        <p class="sold-message">Nous sommes désolés, mais cet article n'est plus disponible.</p>
+      </div>  
     </div>
 
     <div class="box">
       <img src="/images/pomsky6.jpg" alt="">
       <h3 class="heading-6" >Peaberry Arabica coffee from Brazil</h3>
       <div class="price"><div class="price-6 prices">155.99</div><div class="dollar-sign"></div><span>115.99$</span></div>
-      <button class="btn btn-light">Voir disponibilité de ce type</button>
+      <div class="sold-container">
+        <h1 class="sold-heading">Vende(u)</h1>
+        <p class="sold-message">Nous sommes désolés, mais cet article n'est plus disponible.</p>
+      </div>  
     </div>
 
   </div>
 </div>
 
-<div class="race" id="races">
-  <div class="races">
-    <div class="races_heading">
-      Parent Reproducteur
-    </div>
+<div class="race">
+  <div class="header" id="parent">
+    <h1>Parents</h1>
   </div>
 
   <div class="races_context">
