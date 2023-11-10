@@ -1,60 +1,3 @@
-.container {
-  --uib-size: 45px;
-  --uib-color: black;
-  --uib-speed: 1.75s;
-  --uib-bg-opacity: .1;
-  height: 31.25px;
-  width: 50px;
-  transform-origin: center;
-  overflow: visible;
-}
-
-.car {
-  stroke: var(--uib-color);
-  stroke-dasharray: 100;
-  stroke-dashoffset: 0;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  animation:
-    travel var(--uib-speed) ease-in-out infinite,
-    fade var(--uib-speed) ease-out infinite;
-  will-change: stroke-dasharray, stroke-dashoffset;
-  transition: stroke 0.5s ease;
-}
-
-.track {
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke: var(--uib-color);
-  opacity: var(--uib-bg-opacity);
-}
-
-@keyframes travel {
-  0% {
-    stroke-dashoffset: 100;
-  }
-
-  75% {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-
-  20%,
-  55% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-
 :root {
   --main-color: #0e4575;
   --border: 0.1rem solid rgba(255, 255, 255, 0.3);
@@ -321,7 +264,6 @@ img{
   justify-content: center;
 }
 
-
 .races_img{
   padding: 25px;
 }
@@ -335,8 +277,6 @@ img{
   border: 1px solid rgb(240, 235, 235);
   border-radius: 15px;
 }
-
-
 
 .footer{
   background-color: var(--main-color);
@@ -385,6 +325,58 @@ img{
   border-radius: 8px; /* Optional: Add rounded corners to the image */
 }
 
+
+/* Available dogs  */
+.availability-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.dog-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  max-width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.dog-card:hover {
+  transform: scale(1.05);
+}
+
+.dog-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.dog-card h2 {
+  margin-top: 10px;
+}
+
+.dog-card p {
+  color: #555555;
+  line-height: 1.4;
+}
+
+.dog-card button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dog-card button:hover {
+  background-color: #0056b3;
+}
 
 
 /* media queries start */
