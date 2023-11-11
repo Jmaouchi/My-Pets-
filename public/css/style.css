@@ -304,6 +304,7 @@ img{
 
 /* Available dogs  */
 .availability-section {
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
