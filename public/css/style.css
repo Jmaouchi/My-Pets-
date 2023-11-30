@@ -97,6 +97,9 @@ nav{
   box-shadow: 4px 5px 10px rgb(4, 43, 97);
 }
 
+.chiots_avendre{
+  cursor: pointer;
+}
 
 .pets_content{
   border: var(--border);
