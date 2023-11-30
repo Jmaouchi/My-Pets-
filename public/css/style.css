@@ -435,6 +435,83 @@ body, h1, p {
 }
 
 
+/* contact  */
+.contact-form {
+  position: absolute;
+  top: 0;
+  left: -500px;
+  max-width: 600px;
+  margin: 50px auto;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  animation: fadeIn 1s ease-in-out; /* Animation for a fadeIn effect */
+}
+
+.show{
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 20%;
+  z-index: 1000;
+  background-color: rgba(10, 2, 24, 0.778);
+  transition: all 1s;
+}
+
+h2 {
+  text-align: center;
+  color: #f3eaea;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  color: #ccbdbd;
+}
+
+input, textarea {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease-in-out; /* Transition for input focus effect */
+}
+
+input:focus, textarea:focus {
+  border-color: #3498db; /* Highlight border color on focus */
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; /* Transition for button color change on hover */
+}
+
+button:hover {
+  background-color: #2574a9;
+}
+
+/* Keyframes for fadeIn animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
 
 /* footer  */
 footer {
