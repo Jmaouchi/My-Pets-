@@ -6,8 +6,6 @@ function showForm(){
     contactForm.classList.toggle('show')
 }
 
-
-
 contactBtn.addEventListener('click', showForm)
 
 
