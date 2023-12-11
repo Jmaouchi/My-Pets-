@@ -433,6 +433,35 @@ img {
   color: #666;
 }
 
+.review_section{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #b0a9a931;
+  padding: 15px;
+}
+
+.fa-star{
+  color: gold;
+}
+
+.fa-star:hover{
+  border: solid black;
+  cursor: pointer;
+}
+
+.add_review, .add_review_btn{
+  background-color: #3498db;
+  padding: 3px;
+  border-radius: 15px;
+}
+
+.add_review:hover .fa-pen{
+  color: #dde7f2;
+}
+
 
 /* contact  */
 .contact-form {

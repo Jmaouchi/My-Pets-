@@ -15,7 +15,7 @@
   <div class="collapse navbar-collapse main-nav" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <div class="nav-link border border-warning text-dark chiots_avendre" href="/" id="nav-link-padding">CHIOTS À VENDRE</i></div>
+        <a class="nav-link border border-warning text-dark chiots_avendre" href="#available_dogs" id="nav-link-padding">CHIOTS À VENDRE</i></a>
       </li>
       <a href="#races">
         <li class="nav-item">
@@ -23,7 +23,7 @@
         </li>
       </a>
       <li class="nav-item">
-        <a class="nav-link border border-secondary rounded text-light" href="/help">Tous Les Chiots Disponibles</a>
+        <a class="nav-link border border-secondary rounded text-light" href="#">Tous Les Chiots Disponibles</a>
       </li>
       <li class="nav-item">
         <a class="nav-link border border-secondary text-light" href="/help">My Clients</a>
@@ -31,7 +31,7 @@
     </ul>
   </div>
   
-  <button class="fa-beat-fade contact_me_text contact" id="nav-link">Contact Moi<i class="fa-solid fa-right-to-bracket m-1"></i></button>
+  <button class="fa-beat-fade contact_me_text contact_me" id="nav-link">Contact Moi<i class="fa-solid fa-right-to-bracket m-1"></i></button>
 
 </nav>
 
@@ -178,14 +178,26 @@
       <h1>DNA Test Result</h1>
       <img src="/images/KemmyG.jpg" alt="" class="races_img">          
     </div>
+    <div class="alldogs col-sm-3 col-md-4 col-lg-6">
+      <span class="parent_heading">Mal</span>
+      <img src="/images/mal.jpg" alt="" class="races_img">                
+    </div>
+    <div class="alldogs col-sm-3 col-md-4 col-lg-6">
+      <h1>DNA Test Result</h1>
+      {{!-- <img src="/images/KemmyG.jpg" alt="" class="races_img"> --}}
+      <h1>Not available yet</h1>
+    </div>
   </div>
 </div>
 
 {{!-- available dogs partial --}}
 {{> availableDogs}}
 
+
 {{!-- clients partial --}}
-{{> clients}}
+<div class="client_container">
+  {{> clients}}
+</div>
 
 {{!-- contact partial  --}}
 {{> contact}}

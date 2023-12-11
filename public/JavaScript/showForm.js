@@ -1,5 +1,5 @@
 const contactForm = document.querySelector('.contact-form')
-const contactBtn = document.querySelector('.contact_me_text')
+const contactBtn = document.querySelector('.contact_me')
 
 
 function showForm(){
