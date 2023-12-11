@@ -454,8 +454,8 @@ img {
 
 .add_review, .add_review_btn{
   background-color: #3498db;
-  padding: 3px;
-  border-radius: 15px;
+  padding: 5px;
+  border-radius: 3px;
 }
 
 .add_review:hover .fa-pen{
