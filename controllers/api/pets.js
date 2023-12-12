@@ -14,4 +14,18 @@ router.get('/', (req, res) => {
 });
 
 
+// post a new review
+router.post('/', (req, res) => {
+  Pets.create({
+    name: req.body.name,
+    age: req.body.age
+  })
+    .then(dbPostData => res.json(dbPostData))
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
+
+
 module.exports = router;
