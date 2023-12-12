@@ -8,10 +8,10 @@ const {Reviews} = require('../models');
 router.get('/',(req,res) => {
   Reviews.findAll({})
   .then(dbUserData => {
-    const familyData = dbUserData.map(data => data.get({plain: true}));
-    console.log(familyData);
+    const reviewsdata = dbUserData.map(data => data.get({plain: true}));
+    console.log(reviewsdata);
     res.render('clients', {
-      familyData
+      reviewsdata
     })
   })
   .catch(err => {
