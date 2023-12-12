@@ -1,15 +1,16 @@
 const router = require('express').Router();
-const homeRoutes = require('./homepage');
+
+//get all the routes from the api folder
 const apiRoutes = require('./api');
+const htmlRoutes = require('./homepageRoutes');
+const clientRoute = require('./clientRoutes');
 
-// home routes
-router.use('/', homeRoutes);
-// all apiRoutes should start with api
+
 router.use('/api', apiRoutes);
+router.use('/', htmlRoutes);
+router.use('/client', clientRoute);
 
 
-/* This is so if we make a request to  any endpoint that doesn't exist, we'll receive a 404 error 
-indicating we have requested an incorrect resource, another RESTful API practice. */
 router.use((req, res) => {
   res.status(404).end();
 });
