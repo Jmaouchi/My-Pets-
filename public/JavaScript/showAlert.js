@@ -6,7 +6,7 @@ const continueReview = document.querySelector('.ok');
 
 
 showTheAlert= () => {
-  showAlertMessage.style.display = 'block'
+  showAlertMessage.style.display = 'flex'
 }
 
 

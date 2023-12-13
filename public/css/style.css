@@ -463,11 +463,14 @@ img {
 }
 
 .review-alert{
+  background-color: #3d404347;
   color: red;
+  padding: 15px;
+  font-size: 25px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  display: none;
+  /* display: none; */
 }
 
 .form-review{
@@ -476,9 +479,14 @@ img {
   padding: 15px;
 }
 
-
 .review-submit{
   display: none;
+}
+
+.review_btn_submit{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* contact  */
