@@ -14,8 +14,31 @@
 
     <div class="add_review">
       <i class="fas fa-pen"></i>
-      <button class="add_review_btn">Laisser un commentaire</button>
+      <button class="add_review_btn showAlert">Laisser un commentaire</button>
     </div>
+  </div>
+  <div class="review-alert">
+    <h1>Please be respectfull once you add a review</h1>
+    <button class="ok bg-success">Continuer</button>
+  </div>
+  <div class="review-submit">
+    <section class="review-form">
+      <form class="form-review">
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <div class="stars">
+          <h5>5 etoil est la bonne lol</h5>
+          <i class="fas fa-star" data-id="1"></i>
+          <i class="fas fa-star" data-id="2"></i>
+          <i class="fas fa-star" data-id="3"></i>
+          <i class="fas fa-star" data-id="4"></i>
+          <i class="fas fa-star" data-id="5"></i>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
   </div>
 
   <div class="clients">
@@ -72,3 +95,4 @@
   </div> 
 
 </div>
+<script src="/JavaScript/showAlert.js"></script>

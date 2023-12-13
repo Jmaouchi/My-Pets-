@@ -18,7 +18,7 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
   Pets.create({
     name: req.body.name,
-    age: req.body.age
+    my_comment: req.body.my_comment
   })
     .then(dbPostData => res.json(dbPostData))
     .catch(err => {

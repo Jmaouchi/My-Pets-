@@ -462,6 +462,21 @@ img {
   color: #dde7f2;
 }
 
+.review-alert{
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  display: none;
+}
+
+.form-review{
+  background-color: #0d0832;
+  color: white;
+  padding: 15px;
+}
+
+
 
 /* contact  */
 .contact-form {

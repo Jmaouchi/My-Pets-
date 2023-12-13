@@ -21,17 +21,7 @@ Reviews.init(
     my_comment: {
       type: DataTypes.TEXT,
       allowNull: false
-    },
-    createdAt: {
-      type: DataTypes.DATE,
-      allowNull: false,
-        // getter function, that will be called before entring the data into the database
-        get(){
-          const currentDate = new Date;
-          const formattedDate = moment(currentDate).format("MM/DD/YY, hh:mm:ss");
-          return formattedDate
-        }
-    },
+    }
   },
   {
     sequelize,
