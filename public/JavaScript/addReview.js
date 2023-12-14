@@ -10,23 +10,27 @@ async function addReview(event) {
   console.log('is ' + name);
   console.log(my_comment);
 
-  const response = await fetch('/api/reviews', {
-    method: 'POST',
-    body: JSON.stringify({
-      name,
-      my_comment,
-      stars_num
-    }),
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  });
+  if(!name || !my_comment ){
+    alert('Fill up form')
+  } else{
+    const response = await fetch('/api/reviews', {
+      method: 'POST',
+      body: JSON.stringify({
+        name,
+        my_comment,
+        stars_num
+      }),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
 
-  if (response.ok) {
-    document.location.replace('/client');
-  } else {
-    alert(response.statusText);
-  }
+    if (response.ok) {
+      document.location.replace('/client');
+    } else {
+      alert(response.statusText);
+    }
+  }  
 }
 
 
