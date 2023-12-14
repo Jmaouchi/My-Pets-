@@ -18,7 +18,8 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
   Reviews.create({
     name: req.body.name,
-    my_comment: req.body.my_comment
+    my_comment: req.body.my_comment,
+    stars_num: req.body.stars_num
   })
     .then(dbPostData => res.json(dbPostData))
     .catch(err => {

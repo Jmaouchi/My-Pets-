@@ -21,6 +21,10 @@ Reviews.init(
     my_comment: {
       type: DataTypes.TEXT,
       allowNull: false
+    },
+    stars_num: {
+      type: DataTypes.INTEGER,
+      allowNull: false
     }
   },
   {

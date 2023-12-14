@@ -14,18 +14,6 @@ router.get('/', (req, res) => {
 });
 
 
-// post a new review
-router.post('/', (req, res) => {
-  Pets.create({
-    name: req.body.name,
-    my_comment: req.body.my_comment
-  })
-    .then(dbPostData => res.json(dbPostData))
-    .catch(err => {
-      console.log(err);
-      res.status(500).json(err);
-    });
-});
 
 
 module.exports = router;
