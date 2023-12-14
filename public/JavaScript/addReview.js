@@ -30,5 +30,4 @@ async function addReview(event) {
 }
 
 
-
 document.querySelector('.review_btn_submit').addEventListener('click', addReview);
