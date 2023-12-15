@@ -9,7 +9,12 @@
       <i class="fas fa-star" data-id="3"></i>
       <i class="fas fa-star" data-id="4"></i>
       <i class="fas fa-star" data-id="5"></i>
-      <p>16 Commentaires</p>
+      {{!-- get the length of the data or how many reviews  --}}
+      {{#if reviewsdata}}
+      <p>
+        {{reviewsdata.length}}
+      </p>
+      {{/if}}
     </div>
 
     <div class="add_review">

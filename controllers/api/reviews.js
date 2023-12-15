@@ -29,4 +29,23 @@ router.post('/', (req, res) => {
 });
 
 
+router.delete('/:id', (req, res) => {
+  Reviews.destroy({
+    where: {
+      id: req.params.id
+    }
+  })
+    .then(dbReviewData => {
+      if (!dbReviewData) {
+        res.status(404).json({ message: 'No review exists with that ID, try again.' });
+        return;
+      }
+      res.json('Review is been deleted')
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
+
 module.exports = router;
