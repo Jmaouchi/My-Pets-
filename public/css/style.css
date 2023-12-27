@@ -433,6 +433,7 @@ img {
   color: #666;
 }
 
+
 .review_section{
   display: flex;
   flex-wrap: wrap;
@@ -470,7 +471,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* display: none; */
+  display: none;
 }
 
 .form-review{
