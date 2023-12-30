@@ -24,7 +24,7 @@ Reviews.init(
     },
     stars_num: {
       type: DataTypes.INTEGER,
-      allowNull:
+      allowNull: false
     }
   },
   {

@@ -6,7 +6,7 @@ const stars_num = 5;
 async function addReview(event) {
   event.preventDefault();
   const name = reviewer.value;
-  const my_comment = reviewer.value;
+  const my_comment = reviewer_message.value;
   console.log('is ' + name);
   console.log(my_comment);
 
