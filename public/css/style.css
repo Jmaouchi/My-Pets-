@@ -623,6 +623,11 @@ footer {
   .testimonial-card {
     max-width: 100%;
   }
+
+  
+  .collapse:not(.show) {
+    display: block;
+  }
 }
 
 
@@ -637,4 +642,7 @@ footer {
     font-size: 5px;
   }
 
+  .collapse:not(.show) {
+    display: inline-block;
+  }
 }
