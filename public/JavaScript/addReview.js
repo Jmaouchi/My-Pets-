@@ -1,14 +1,16 @@
 const reviewer = document.querySelector('.reviewer_name')
 const reviewer_message = document.querySelector('.reviewer_message')
 const stars_num = 5;
+const reviewer_image = document.querySelector('.reviewer_image')
+
 
 // First button listener
 async function addReview(event) {
   event.preventDefault();
   const name = reviewer.value;
   const my_comment = reviewer_message.value;
-  console.log('is ' + name);
-  console.log(my_comment);
+  const image = 'images/puppy-2785074_640.jpg'; // this should be a path from a database ( have to get AWS s3 to generate images)
+
 
   if(!name || !my_comment ){
     alert('Fill up form')
@@ -18,7 +20,8 @@ async function addReview(event) {
       body: JSON.stringify({
         name,
         my_comment,
-        stars_num
+        stars_num,
+        image
       }),
       headers: {
         'Content-Type': 'application/json'

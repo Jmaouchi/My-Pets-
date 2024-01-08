@@ -12,7 +12,7 @@
       {{!-- get the length of the data or how many reviews  --}}
       {{#if reviewsdata}}
       <p>
-        {{reviewsdata.length}} Nouveau   Commentaires
+        {{reviewsdata.length}} Nouveau Commentaires
       </p>
       {{/if}}
     </div>
@@ -34,7 +34,7 @@
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" class="reviewer_message" placeholder="Ajouter Un Commentaire entre 10 et 20 mots" required></textarea>
         <label for="myfile">Ajouter Une Image:</label>
-        <input type="file" id="myfile" name="myfile">
+        <input type="file" id="myfile" name="myfile" class="reviewer_image">
         {{!-- <div class="stars">
           <h5>5 etoil est la bonne lol</h5>
           <i class="fas fa-star" data-id="1"></i>
@@ -95,7 +95,7 @@
     {{#each reviewsdata}}
       <div class="testimonial-card">
         <div class="testimonial-content">
-          <img src="/images/default.jpg" alt='{{id}}'>
+          <img src="{{image}}" alt='{{id}}'>
           {{!-- <h2>{{createdAt}}</h2> --}}
           <h2>{{name}}</h2>
           <p class="my_comment">{{my_comment}}</p>

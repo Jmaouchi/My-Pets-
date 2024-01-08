@@ -25,6 +25,10 @@ Reviews.init(
     stars_num: {
       type: DataTypes.INTEGER,
       allowNull: false
+    },
+    image: {
+      type: DataTypes.STRING,
+      allowNull: false
     }
   },
   {
