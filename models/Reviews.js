@@ -5,7 +5,6 @@ const moment = require('moment');
 
 class Reviews extends Model {}
 
-// create fields/columns for Post model
 Reviews.init(
   {
     id: {
