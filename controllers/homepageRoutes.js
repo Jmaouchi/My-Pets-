@@ -3,7 +3,6 @@ const sequelize = require('../config/connection');
 const {Pets} = require('../models');
 
 
-
 // GET all Pets data
 router.get('/',(req,res) => {
   Pets.findAll({})
@@ -19,6 +18,8 @@ router.get('/',(req,res) => {
     res.status(500).json(err);
   });
 });
+
+
 
 
 module.exports = router;

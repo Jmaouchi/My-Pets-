@@ -1,40 +1,43 @@
-const reviewer = document.querySelector('.reviewer_name')
-const reviewer_message = document.querySelector('.reviewer_message')
+const reviewer = document.querySelector('.reviewer_name');
+const reviewer_message = document.querySelector('.reviewer_message');
+const reviewer_image = document.querySelector('.reviewer_image');
 const stars_num = 5;
-const reviewer_image = document.querySelector('.reviewer_image')
-
 
 // First button listener
 async function addReview(event) {
   event.preventDefault();
+
   const name = reviewer.value;
   const my_comment = reviewer_message.value;
-  const image = 'images/puppy-2785074_640.jpg'; // this should be a path from a database ( have to get AWS s3 to generate images)
+  const image = reviewer_image.files[0]; // Get the selected image file
 
 
-  if(!name || !my_comment ){
-    alert('Fill up form')
-  } else{
-    const response = await fetch('/api/reviews', {
+  if (!name || !my_comment || !image) {
+  alert('Fill up form');
+    } else {
+      const formData = new FormData();
+      formData.append('name', name);
+      formData.append('my_comment', my_comment);
+      console.log('the image is ', image, typeof image)
+      formData.append('image', image);
+      formData.append('stars_num', stars_num)
+
+    try {
+      const response = await fetch('/api/reviews', {
       method: 'POST',
-      body: JSON.stringify({
-        name,
-        my_comment,
-        stars_num,
-        image
-      }),
-      headers: {
-        'Content-Type': 'application/json'
-      }
+      body: formData, // Send FormData containing image file
     });
 
     if (response.ok) {
       document.location.replace('/client');
     } else {
-      alert(response.statusText);
+      alert('Failed to add review: ' + response.statusText);
     }
-  }  
+    } catch (error) {
+      console.error('Error adding review:', error);
+      alert('Failed to add review');
+    }
+  }
 }
-
 
 document.querySelector('.review_btn_submit').addEventListener('click', addReview);

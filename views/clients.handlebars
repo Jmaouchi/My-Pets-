@@ -51,51 +51,10 @@
   </div>
 
   <div class="clients">
-    <div class="testimonial-card">
-      <div class="testimonial-content">
-        <img src="/images/386473791_857568445577137_1308291614278272068_n.jpg" alt="Client 1">
-        <h2>Junnifer</h2>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-      </div>
-    </div>
-
-    <div class="testimonial-card">
-      <div class="testimonial-content">
-        <img src="/images/dog.png" alt="Client 2">
-        <h2>Jackson</h2>
-        <p>"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-      </div>
-    </div>
-
-    
-    <div class="testimonial-card">
-      <div class="testimonial-content">
-        <img src="/images/dog.png" alt="Client 3">
-        <h2>Jackson</h2>
-        <p>"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-      </div>
-    </div>
-
-    <div class="testimonial-card">
-      <div class="testimonial-content">
-        <img src="/images/dog4.jpg" alt="Client 4">
-        <h2>John</h2>
-        <p>"Our picky eater, Bella, absolutely loves this dog! Her coat is shinier, and she has so much more energy."</p>
-      </div>
-    </div>
-
-    <div class="testimonial-card">
-      <div class="testimonial-content">
-        <img src="/images/dpg2.jpg" alt="Client 4">
-        <h2>Lucas</h2>
-        <p>"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-      </div>
-    </div>
-
     {{#each reviewsdata}}
       <div class="testimonial-card">
         <div class="testimonial-content">
-          <img src="{{image}}" alt='{{id}}'>
+          <img src="/images/{{image}}" alt='{{id}}'>
           {{!-- <h2>{{createdAt}}</h2> --}}
           <h2>{{name}}</h2>
           <p class="my_comment">{{my_comment}}</p>
