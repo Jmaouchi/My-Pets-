@@ -18,7 +18,6 @@ async function addReview(event) {
       const formData = new FormData();
       formData.append('name', name);
       formData.append('my_comment', my_comment);
-      console.log('the image is ', image, typeof image)
       formData.append('image', image);
       formData.append('stars_num', stars_num)
 
